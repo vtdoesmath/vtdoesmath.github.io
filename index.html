@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cool Math Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VT Does Math</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Basic CSS -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.15s ease;
+    }
+
+    section:hover {
+      transform: translateY(-2px);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #111;
+    }
+
+    a {
+      color: #0070f3;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+
+  <!-- MathJax for LaTeX support -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my new math site!</p>
+  <header>
+    <h1>VT Does Math</h1>
+    <p>A collection of elegant results, integrals, and ideas 💡</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📘 Featured Work</h2>
+      <p>Exploring the infinite sum $\sum_{n=1}^{\infty} \frac{1}{n^2}$ and its connection to $\pi^2 / 6$.</p>
+      <a href="pdfs/basel_problem.pdf" target="_blank">Read PDF →</a>
+    </section>
+
+    <section>
+      <h2>🧮 Recent Notes</h2>
+      <ul>
+        <li><a href="pdfs/integrals.pdf" target="_blank">A collection of curious integrals</a></li>
+        <li><a href="pdfs/beta_function.pdf" target="_blank">Beta and Gamma identities</a></li>
+        <li><a href="pdfs/summation_tricks.pdf" target="_blank">Summation techniques and transformations</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💭 About</h2>
+      <p>Mostly a compilation of mathematical thoughts I’ve had, along with the ideas of really clever people I wanted to document in one place.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 VT Does Math · Built with ❤️ using GitHub Pages</p>
+  </footer>
 </body>
 </html>
