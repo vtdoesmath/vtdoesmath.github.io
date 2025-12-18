@@ -31,6 +31,8 @@
       color: var(--text);
       margin: 0;
       line-height: 1.6;
+      opacity: 0;
+      animation: fadeIn 0.6s ease forwards;
     }
 
     header {
@@ -55,42 +57,6 @@
       font-size: 1.1rem;
       color: #4d4368;
       opacity: 0.9;
-    }
-
-    nav {
-      background-color: var(--accent);
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 0.8rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      position: relative;
-      transition: 0.2s ease;
-    }
-
-    nav a::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0;
-      height: 2px;
-      background: white;
-      transition: width 0.25s ease;
-    }
-
-    nav a:hover::after {
-      width: 60%;
     }
 
     main {
@@ -123,21 +89,12 @@
     }
 
     ul {
-      list-style: none;
-      padding-left: 1rem;
+      list-style: disc;
+      padding-left: 1.5rem;
     }
 
     li {
       margin-bottom: 0.8rem;
-      position: relative;
-    }
-
-    li::before {
-      content: '∴';
-      color: var(--accent);
-      position: absolute;
-      left: -1rem;
-      top: 0;
     }
 
     a {
@@ -166,12 +123,6 @@
       color: var(--accent);
     }
 
-    /* Fade-in effect */
-    body {
-      opacity: 0;
-      animation: fadeIn 0.6s ease forwards;
-    }
-
     @keyframes fadeIn {
       to { opacity: 1; }
     }
@@ -194,18 +145,13 @@
     <p>A page for beautiful integrals and sums.</p>
   </header>
 
-  <nav>
-    <a href="#sitow">S/ITOW</a>
-    <a href="#recent">Recent Work</a>
-    <a href="#about">About Me</a>
-  </nav>
-
   <main>
     <section id="sitow">
       <h2>Sum/Integral of the Week</h2>
       <p>
-        Each week I shall post one interesting integral or sum. If you would like to discuss the sum/integral, or send me your solution,
-        feel free to contact me at <a href="mailto:vtnaveenmugundh18@gmail.com">vtnaveenmugundh18@gmail.com</a>.
+        Each week I shall post one interesting integral or sum.  
+        If you would like to discuss the sum/integral, or send me your solution,  
+        feel free to contact me at <b>vtnaveenmugundh18@gmail.com</b>.
       </p>
     </section>
 
